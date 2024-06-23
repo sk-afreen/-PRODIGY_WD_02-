@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1> stopwatch web application</h1>
         <div class="stopwatch">
             <h1 id="displayTime">00:00:00
             </h1>
@@ -31,9 +32,9 @@
                     }
                 }
 
-                let h = hours < 20 ? "0" + hours : hours;
-                let m = minutes < 20 ? "0" + minutes : minutes;
-                let s = seconds < 20 ? "0" + seconds : seconds;
+                let h = hours < 10 ? "0" + hours : hours;
+                let m = minutes < 10 ? "0" + minutes : minutes;
+                let s = seconds < 10 ? "0" + seconds : seconds;
                 displayTime.innerHTML = h +":"+ m +":"+ s;
             }
             
